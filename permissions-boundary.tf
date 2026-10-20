@@ -10,9 +10,9 @@ resource "aws_iam_policy" "permissions_boundary" {
     Version = "2012-10-17"
     Statement = [
       {
-        Sid      = "AllowScopedWorkloadServicesWithinBoundary"
-        Effect   = "Allow"
-        Action   = [
+        Sid    = "AllowScopedWorkloadServicesWithinBoundary"
+        Effect = "Allow"
+        Action = [
           "ecs:*",
           "ecr:*",
           "logs:*",
